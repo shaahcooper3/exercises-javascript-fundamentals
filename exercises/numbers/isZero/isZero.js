@@ -1,9 +1,3 @@
-/**
- * Returns true if the given number is 0 and false otherwise
- *
- * @param {number} num - The input number
- * @returns {boolean} True if num is 0 and false otherwise
- */
 function isZero(num) {
   return num === 0;
 }
