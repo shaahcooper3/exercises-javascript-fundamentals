@@ -1,11 +1,5 @@
-/**
- * Returns true if the given number is negative (less than 0) and false otherwise.
- *
- * @param {number} num The input number
- * @returns {boolean} True if num is negative and false otherwise
- */
 function isNegative(num) {
-  return _____;
+  return num < 0;
 }
 
 if (require.main === module) {
