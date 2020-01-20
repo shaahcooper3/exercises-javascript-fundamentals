@@ -7,15 +7,15 @@
  * @returns {number} The smallest element in the array
  */
 function smallest(array) {
-  let _____ = _____;
+  let smallestSofar = array[0];
 
-  for (let _____ of _____) {
-    if (_____) {
-      _____ = _____;
+  for (let element of array) {
+    if (element < smallestSofar) {
+      smallestSofar = element;
     }
   }
 
-  return _____;
+  return smallestSofar;
 }
 
 if (require.main === module) {
