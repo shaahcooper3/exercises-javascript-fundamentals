@@ -36,8 +36,8 @@ function printSolidPyramid(height) {
     Work through 3-4 examples by hand and try to notice a pattern.
   */
   for (let i = 0; i < height; i++) {
-    let numSpaces = _____;
-    let numChars = _____;
+    let numSpaces = height-i-1;
+    let numChars = 1 + i*2;
 
     helpers.printCountTimes(' ', numSpaces);
     helpers.printCountTimes('#', numChars);
@@ -56,11 +56,11 @@ function solidPyramidPrintTest(height) {
 }
 
 if (require.main === module) {
-  solidPyramidPrintTest(1);
-  solidPyramidPrintTest(2);
-  solidPyramidPrintTest(3);
+  solidPyramidPrintTest(5);
   solidPyramidPrintTest(6);
-  solidPyramidPrintTest(10);
+  solidPyramidPrintTest(7);
+  solidPyramidPrintTest(8);
+  solidPyramidPrintTest(9);
 }
 
 module.exports = printSolidPyramid;
