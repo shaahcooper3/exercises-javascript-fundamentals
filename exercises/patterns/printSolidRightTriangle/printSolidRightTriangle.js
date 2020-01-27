@@ -33,16 +33,14 @@ function printSolidRightTriangle(height) {
     2. How many characters should be on each line?
   */
   for (let i = 0; i < height; i++) {
-    let numChars = _____;
+    let numChars = i+1;
 
     helpers.printCountTimes('#', numChars);
     helpers.printNewLine();
   }
 }
 
-/**
- * For testing purposes, prints a diagram of the given height.
- */
+
 function solidRightTrianglePrintTest(height) {
   console.log('');
   console.log(`Printing a SOLID RIGHT TRIANGLE of height ${height}:`);
@@ -51,17 +49,12 @@ function solidRightTrianglePrintTest(height) {
 }
 
 if (require.main === module) {
-  /*
-    Sanity checking console output is challenging. Think about how you might do it.
-
-    For now, we simply print out a few example inputs and verify by sight that they're
-    what we expect.
-  */
+ 
 
   solidRightTrianglePrintTest(1);
   solidRightTrianglePrintTest(2);
-  solidRightTrianglePrintTest(4);
-  solidRightTrianglePrintTest(6);
+  solidRightTrianglePrintTest(3);
+  solidRightTrianglePrintTest(5);
   solidRightTrianglePrintTest(10);
 }
 
