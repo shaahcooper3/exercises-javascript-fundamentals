@@ -51,12 +51,7 @@ function solidSquarePrintTest(height) {
 }
 
 if (require.main === module) {
-  /*
-    Sanity checking console output is challenging. Think about how you might do it.
-
-    For now, we simply print out a few example inputs and verify by sight that they're
-    what we expect.
-  */
+  
 
   solidSquarePrintTest(1);
   solidSquarePrintTest(2);
