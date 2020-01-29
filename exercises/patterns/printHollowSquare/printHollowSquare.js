@@ -29,10 +29,18 @@ let helpers = require('../printHelpers');
 function printHollowSquare(height) {
   for (let i = 0; i < height; i++) {
     // This is your job. :)
+      let numSpaces = height - i;
+      let numChars = 2 * i - 1;
+
+  
+      helpers.printCountTimes(' ', numSpaces);
+      helpers.printCountTimes('#', numChars);
+      helpers.printNewLine();
+    }
 
     helpers.printNewLine();
   }
-}
+
 /**
  * For testing purposes, prints a diagram of the given height.
  */

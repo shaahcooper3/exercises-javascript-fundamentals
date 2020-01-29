@@ -6,7 +6,11 @@
  * @param {number} b Side length #2
  * @param {number} c Side length #3
  * @returns {boolean} True if a triangle exists with side lengths of a, b, and c. Returns false otherwise.
- */
+ */ 
+A+B >= C
+A+C >= B
+B+C >= A
+ 
 function isValidTriangle(a, b, c) {
   /*
     Before you go Googling, get out a piece of paper and draw some triangles.
