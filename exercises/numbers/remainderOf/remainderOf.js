@@ -20,4 +20,3 @@ if (require.main === module) {
 }
 
 module.exports = remainderOf;
-
